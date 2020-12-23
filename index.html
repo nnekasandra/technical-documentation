@@ -19,50 +19,54 @@
             <li><a href="semantic_elements" class="nav-link">Semantic Elements</a></li>
         </ul>
        </nav>
-    </header>
    <main id="main-doc">
         <section class="main-section" id="introduction">
             <h2>Introduction</h2>
             <article>
-               <h3>HTML</h3>
+               <h3>HTML</h3> 
                <p> HTML is the World Wide Web’s core markup language. Originally, HTML was primarily designed as a language for semantically describing scientific documents. Its general design, however, has enabled it to be adapted, over the subsequent years, to describe a number of other types of documents and even applications.</p>
+                <br>
                <p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+               <br>
                <p>"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
-               <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML uses html tags to markup elements. Some of them includes <span>&lt;head&gt;, &lt;h1&gt;, &lt;p&gt;, &lt;footer&gt; and so on.</span></p>
+               <br>
+               <p>HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML uses html tags to markup elements. Some of them includes <span>&lt;head&gt;</span>,<span> &lt;h1&gt;</span>,<span>&lt;p&gt;</span>, <span>&lt;footer&gt;</span> and so on.</p>
             </article>
-        </section>
+        </section> <br> <br>
         <section class="main-section" id="html_document_structure">
             <h2>HTML Document Structure</h2>
+            <br>
             <article>
                 <h3>Basic Structure Of HTML Document</h3>
                 <p>A basic HTML document looks like this:</p>
-                <pre>
-                <code>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html&gt;
-                    &lt;head&gt;
-                   &nbsp; &lt;title&gt;Sample page&lt;/title&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                    &nbsp;&lt;h1>Sample page&lt;/h1&gt;
-                    &nbsp;&lt;p>This is a &lt;a href="demo.html"&gt;simple&lt;/a&gt; sample.&lt;/p&gt;
-                    &nbsp;&lt;!-- this is a comment --&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt; 
-                </code>
-                </pre>
-                <p>HTML documents consist of a tree of elements and text. Each element is denoted in the source by a start tag, such as <span>&lt;body&gt;</span>, and an end tag, such as <span>&lt;/body&gt;.</span> Certain start tags and end tags can in certain cases be omitted and are implied by other tags.</p>
-                <p>Elements can have attributes, which control how the elements work. In the example below, there is a hyperlink, formed using the &lt;a&gt;element and its href attribute:</p>
-                <code>&lt;a href="demo.html"&gt;simple&lt;/a&gt;</code>
-                <h3>Document Object Model (DOM)</h3>
-                <p>HTML user agents (e.g., Web browsers) then parse this markup, turning it into a DOM (Document Object Model) tree. A DOM tree is an in-memory representation of a document.</p>
-                <p>When a web page is done loaded, the browser creates a Document Object Model of the Page. <br> The html DOM model is constructed as a tree of objects</p>
+        <pre>
+        <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &nbsp; &lt;title&gt;Sample page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &nbsp;&lt;h1>Sample page&lt;/h1&gt;
+        &nbsp;&lt;p>This is a &lt;a href="demo.html"&gt;simple&lt;/a&gt; sample.&lt;/p&gt;
+        &nbsp;&lt;!-- this is a comment --&gt;
+        &lt;/body&gt;
+        &lt;/html&gt; 
+        </code>
+        </pre>
+        <br>
+                <p>HTML documents consist of a tree of elements and text. Each element is denoted in the source by a start tag, such as <span>&lt;body&gt;</span>, and an end tag, such as <span>&lt;/body&gt;.</span> Certain start tags and end tags can in certain cases be omitted and are implied by other tags.</p> <br>
+                <p>Elements can have attributes, which control how the elements work. In the example below, there is a hyperlink, formed using the <span><b>&lt;a&gt;</b></span> element and its href attribute:</p> <br>
+                <code>&lt;a href="demo.html"&gt;simple&lt;/a&gt;</code> <br> <br>
+                <h3>Document Object Model (DOM)</h3> <br>
+                <p>HTML user agents (e.g., Web browsers) then parse this markup, turning it into a DOM (Document Object Model) tree. A DOM tree is an in-memory representation of a document.</p> <br>
+                <p>When a web page is done loaded, the browser creates a Document Object Model of the Page. <br> The html DOM model is constructed as a tree of objects</p> <br>
                 <figure class="dom-image">
                     <img src="https://www.guru99.com/images/JavaScript/javascript8_1.png" alt="html dom image">
                     <figcaption>Html DOM in Action</figcaption>
                 </figure>
             </article>
-        </section>
+        </section> <br><br>
         <section class="main-section" id="html_tags">
             <h2>HTML Tags</h2>
             <article>
@@ -71,84 +75,85 @@
                 <ol>
                     <li>Paired and Unpaired Tags</li>
                     <li>Self Closing tags</li>
-                </ol>
-                <h3>Paired Tags</h3>
-                <p>An HTML tag is known as a paired tag when the tag consists of an opening tag and a closing tag as its companion tag. An HTML Paired tag starts with an opening tag, which is the tag name enclosed inside the angle brackets, for example, a paragraph opening tag is written as ‘&lt;p&gt;’. The content follows the opening tag which ends with an ending tag, which is the tag name starting with a forward slash, for example, an ending paragraph tag is written as ‘&lt;/p&gt;’. So the first tag can be referred to as the ‘Opening Tag’ and the second tag can be called Closing Tag.</p>
+                </ol> <br>
+                <h3>Paired Tags</h3> <br>
+                <p>An HTML tag is known as a paired tag when the tag consists of an opening tag and a closing tag as its companion tag. An HTML Paired tag starts with an opening tag, which is the tag name enclosed inside the angle brackets, for example, a paragraph opening tag is written as <span>‘&lt;p&gt;’</span>. The content follows the opening tag which ends with an ending tag, which is the tag name starting with a forward slash, for example, an ending paragraph tag is written as <span>‘&lt;/p&gt;’</span>. So the first tag can be referred to as the <em>‘Opening Tag’</em> and the second tag can be called  <em>'Closing Tag'</em>.</p> <br>
                 <figure>
                     <figcaption>Example:</figcaption>
-                    <code>&lt;p&gt;This text is a paragraph . &lt;/p&gt;</code>
-                </figure>
-                <h3>Unpaired Tags</h3>
-                <p>An HTML tag is called an unpaired tag when the tag only has an opening tag and does not have a closing tag or a companion tag. The Unpaired HTML tag does not require a closing tag, an opening tag is sufficient in this type. Unpaired tags are sometimes also named as Standalone Tags or Singular Tags since they do not require a companion tag. <br>These tags are also called Empty Tag.</p>
-                <p>Example &lt;br&gt;, &lt;hr&gt;</p>
+                    <code>&lt;p&gt;This text is a paragraph.&lt;/p&gt;</code>
+                </figure> <br>
+                <h3>Unpaired Tags</h3> <br>
+                <p>An HTML tag is called an unpaired tag when the tag only has an opening tag and does not have a closing tag or a companion tag. The Unpaired HTML tag does not require a closing tag, an opening tag is sufficient in this type. Unpaired tags are sometimes also named as Standalone Tags or Singular Tags since they do not require a companion tag. <br>These tags are also called Empty Tag.</p> <br>
+                <p>Example <span>&lt;br&gt;</span>,<span>&lt;hr&gt;</span></p> <br>
                 <figure>
                     <figcaption>&lt;hr&gt; as an unpaired tag</figcaption>
-                    <pre>
-                     <code>
-                         &lt;p&gt; This is a paragraph &lt;/p&gt;
-                         &lt;hr&gt;
-                         &lt;p&gt; This is another paragraph &lt;/p&gt;
-                     </code>
-                    </pre>
-                </figure>
-                <h3>Self Closing Tags</h3>
-                <p>Self-Closing Tags are those HTML tags that do not have a partner tag, where the first tag is the only necessary tag that is valid for the formatting. The main and important information is contained WITHIN the element as its attribute. An image tag is the classic example of a self-closing tag. <br> E.g <span>&lt;img&gt;, &lt;input&gt;</span></p>
+    <pre>
+    <code>
+    &lt;p&gt; This is a paragraph &lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt; This is another paragraph &lt;/p&gt;
+    </code>
+    </pre>
+                </figure> <br>
+                <h3>Self Closing Tags</h3> <br>
+                <p>Self-Closing Tags are those HTML tags that do not have a partner tag, where the first tag is the only necessary tag that is valid for the formatting. The main and important information is contained WITHIN the element as its attribute. An image tag is the classic example of a self-closing tag. <br> E.g <span>&lt;img&gt;</span>,<span> &lt;input&gt;</span></p> <br>
                 <figure>
                     <figcaption>Self Closing Tags in Action</figcaption>
                     <code>&lt;img src="a.jpg" alt="This is an alternate text"/&gt;</code>
-                </figure>
+                </figure> <br> <br>
             </article>
         </section>
         <section class="main-section" id="block_and_inline_elements">
-            <h2>Block and Inline Elements</h2>
+            <h2>Block and Inline Elements</h2> <br>
             <article>
-                <p>Every HTML element has a default display value, depending on what type of element it is.</p>
+                <p>Every HTML element has a default display value, depending on what type of element it is.</p> <br>
                 <ul>
                     <li>Block-level Elements</li>
                     <li>Inline Element</li>
-                </ul>
-                <h3>Block-level Elements</h3>
-                <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
-                <p>Some types of block elements are: <br> &lt;article&gt;, &lt;div&gt;, &lt;blockquote&gt;, &lt;p&gt; e.t.c</p>
+                </ul> <br>
+                <h3>Block-level Elements</h3> <br>
+                <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p> <br>
+                <p>Some types of block elements are: <br><span> &lt;article&gt;, &lt;div&gt;, &lt;blockquote&gt;, &lt;p&gt;</span> e.t.c</p> <br>
                 <figure>
                     <figcaption>Example</figcaption>
                     <code> &lt;div&gt;Hello World  &lt;/div&gt;</code>
-                </figure>
-                <h3>Inline Elements</h3>
-                <p>An inline element does not start on a new line and it only takes up as much width as necessary. <br>Inline elements can be contained in a block level element</p>
+                </figure> <br>
+                <h3>Inline Elements</h3> <br>
+                <p>An inline element does not start on a new line and it only takes up as much width as necessary. <br>Inline elements can be contained in a block level element</p> <br>
                 <figure>
                     <figcaption>Example</figcaption>
                     <code>&lt;p&gt;Hello&lt;span&gt;World&lt;/span&gt;&lt;p&gt;</code>
-                </figure>
-                <p>Here are inline elements in HTML: <br> <span>&lt;a&gt;, &lt;abbr&gt;,&lt;br&gt;,&lt;code&gt;,&lt;button&gt;</span>etc</p>
-                <p>The &lt;div&gt; element is a block-level and is often used as a container for other HTML elements</p>
-                <p>The &lt;span&gt; element is an inline container used to mark up a part of a text, or a part of a document</p>
+                </figure> <br>
+                <p>Here are inline elements in HTML: <br> <span>&lt;a&gt;, &lt;abbr&gt;,&lt;br&gt;,&lt;code&gt;,&lt;button&gt;</span>etc</p> <br>
+                <p>The <span>&lt;div&gt;</span> element is a block-level and is often used as a container for other HTML elements</p> <br>
+                <p>The <span>&lt;span&gt;</span> element is an inline container used to mark up a part of a text, or a part of a document</p> <br> <br>
             </article>
         </section>
         <section class="main-section" id="html_forms">
-            <h2>HTML Forms</h2>
+            <h2>HTML Forms</h2> <br>
             <article>
-                <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
-                <p>The HTML &lt;form&gt; element is used to create an HTML form for user input:</p>
-                <pre>
-                    <code>
-                        &lt;form&gt;
-                         form elements
-                         &lt;/form&gt;
-                    </code>
-                </pre>
-                <p>The &lt;form&gt; element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
-                <h3>HTML Form Elements</h3>
-                <dl>
-                    <dt>The &lt;input&gt;Element</dt>
-                    <dd>An &lt;input&gt; element can be displayed in many ways, depending on the type attribute.</dd>
+                <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p> <br>
+                <p>The HTML <span>&lt;form&gt;</span> element is used to create an HTML form for user input:</p> <br>
+    <pre>
+    <code>
+    &lt;form&gt;
+    form elements
+    &lt;/form&gt;
+    </code>
+    </pre> <br>
+                <p>The <span>&lt;form&gt;</span> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p> <br>
+                <h3>HTML Form Elements</h3> <br>
+                <dl class="dl1">
+                    <dt>The <span>&lt;input&gt;</span>Element:</dt>
+                    <dd>An <span>&lt;input&gt;</span> element can be displayed in many ways, depending on the type attribute.</dd>
                 </dl>
-                <dl>
-                    <dt>The &lt;label&gt; Element</dt>
-                    <dd>The &lt;label&gt; tag defines a label for many form elements.</dd>
+                <dl class="d12">
+                    <dt>The <span>&lt;label&gt;</span> Element:</dt>
+                    <dd>The <span>&lt;label&gt;</span> tag defines a label for many form elements.</dd>
                 </dl>
+                <br>
                 <p>Here are some examples:</p>
-                <table>
+                <table class="form-table">
                     <tr>
                         <th>Type</th>
                         <th>Description</th>
@@ -173,90 +178,91 @@
                         <td>&lt;input type="button"&gt;</td>
                         <td>Displays a clickable button</td>
                     </tr>
-                </table>
+                </table> <br>
                 <figure>
                     <figcaption>Example: A form with input fields for text</figcaption>
-                    <pre>
-                        <code>
-                            &lt;form&gt;
-                                &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt; <br>
-                                &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt; <br>
-                                &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt; <br>
-                                &lt;input type="text" id="lname" name="lname"&gt;
-                              &lt;/form&gt;
-                        </code>
-                    </pre>
-                </figure>
+    <pre>
+    <code>
+    &lt;form&gt; <br>
+        &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt; <br>
+        &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt; <br>
+        &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt; <br>
+        &lt;input type="text" id="lname" name="lname"&gt; <br>
+    &lt;/form&gt;
+    </code>
+    </pre>
+                </figure> <br>
                 <p>This is how the HTML code above will be displayed in a browser:</p>
-                <form>
+                <form class="input-example">
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname"><br>
                     <label for="lname">Last name:</label><br>
                     <input type="text" id="lname" name="lname">
-                </form>
+                </form> <br>
                 <figure>
                     <figcaption>Example2: A form with radio buttons:</figcaption>
-                    <pre>
-                        <code>
-                            &lt;form&gt; <br>
-                              &lt;input type="radio" id="male" name="gender" value="male"&gt; <br>
-                              &lt;label for="male"&gt;Male&lt;/label&gt;&lt;br&gt; <br>
-                              &lt;input type="radio" id="female" name="gender" value="female"&gt; &lt;br&gt; <br>
-                              &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt; <br>
-                              &lt;input type="radio" id="other" name="gender" value="other"&gt; <br>
-                              &lt;label for="other"&gt;Other&lt;/label&gt; <br>
-                            &lt;/form&gt;  
-                        </code>
-                    </pre>
-                </figure>
+    <pre>
+    <code>
+    &lt;form&gt; <br>
+        &lt;input type="radio" id="male" name="gender" value="male"&gt; <br>
+        &lt;label for="male"&gt;Male&lt;/label&gt;&lt;br&gt; <br>
+        &lt;input type="radio" id="female" name="gender" value="female"&gt; &lt;br&gt; <br>
+        &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt; <br>
+        &lt;input type="radio" id="other" name="gender" value="other"&gt; <br>
+        &lt;label for="other"&gt;Other&lt;/label&gt; <br>
+    &lt;/form&gt;  
+    </code>
+    </pre>
+                </figure> <br>
+                <br><br>
                 <p>This is how the HTML code above will be displayed in a browser:</p>
-                <form>
+                <form class="radio-example">
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label><br>
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label><br>
                     <input type="radio" id="other" name="gender" value="other">
                     <label for="other">Other</label>
-                  </form>
+                  </form> <br> <br>
             </article>
         </section>
         <section class="main-section" id="html_tables">
-            <h2>HTML Tables</h2>
-              <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+            <h2>HTML Tables</h2> <br>
+              <p>HTML tables allow web developers to arrange data into rows and columns.</p> <br>
             <article>
-              <h3>HTML Tables Elements</h3>
-              <p>The &lt;table&gt; tag defines an HTML table. <br>
-                Each table row is defined with a &lt;tr&gt; tag. Each table header is defined with a&lt;th&gt; tag. <br> Each table data/cell is defined with a &lt;td&gt; tag.
-                By default, the text in &lt;th&gt; elements are bold and centered. <br>
-                By default, the text in &lt;td&gt; elements are regular and left-aligned.</p>
+              <h3>HTML Tables Elements</h3> <br>
+              <p>The &lt;table&gt; tag defines an HTML table.<br>
+                Each table row is defined with a &lt;tr&gt; tag. Each table header is defined with a <span>&lt;th&gt;</span> tag.<br> Each table data/cell is defined with a <span>&lt;td&gt;</span> tag. <br>
+                By default, the text in <span>&lt;th&gt;</span> elements are bold and centered. <br>
+                By default, the text in <span>&lt;td&gt;</span> elements are regular and left-aligned.</p> <br>
                <figure>
                    <figcaption>Example:A simple HTML table</figcaption>
-                   <pre>
-                       <code>
-                        &lt;table&gt;
-                            &lt;tr&gt;
-                            &lt;th&gt;Firstname&lt;/th&gt;
-                            &lt;th&gt;Lastname&lt;/th&gt;
-                            &lt;th&gt;Age&lt;/th&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                            &lt;td&gt;Jill&lt;/td&gt;
-                            &lt;td&gt;Smith&lt;/td&gt;
-                            &lt;td&gt;50&lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                            &lt;td&gt;Eve&lt;/td&gt;
-                            &lt;td&gt;Jackson&lt;/td&gt;
-                            &lt;td&gt;94&lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;/table&gt;
-                       </code>
-                   </pre>
-               </figure>
-               <p><b>Note:</b> The &lt;td&gt; elements are the data containers of the table. <br>
-                They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</p>
-               <p>Here is how the table is displayed on browser</p>
-               <table>
+    <pre>
+    <code>
+    &lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+        &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+        &lt;td&gt;94&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+    </code>
+    </pre>
+               </figure> <br> <br>
+               <p><b>Note:</b> The <span>&lt;td&gt;</span> elements are the data containers of the table. <br>
+                They can contain all sorts of HTML elements; text, images, lists, other tables, etc.</p> <br>
+               <p>Here is how the table is displayed on browser</p> <br>
+               <table class="table">
                 <tr>
                   <th>Firstname</th>
                   <th>Lastname</th>
@@ -273,36 +279,36 @@
                   <td>94</td>
                 </tr>
               </table>
-            </article>
+            </article> <br>
             <article>
                 <h3>HTML Table - Add a Caption</h3>
                 <p>To add a caption to a table, use the &lt;caption&gt; tag:</p>
                 <figure>
-                    <pre>
-                        <code>
-                            &lt;caption&gt;Student Data&lt;/caption&gt;
-                            &lt;table border="1"&gt;
-                            &lt;tr&gt;
-                            &lt;th&gt;Firstname&lt;/th&gt;
-                            &lt;th&gt;Lastname&lt;/th&gt;
-                            &lt;th&gt;Age&lt;/th&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                            &lt;td&gt;Jill&lt;/td&gt;
-                            &lt;td&gt;Smith&lt;/td&gt;
-                            &lt;td&gt;50&lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                            &lt;td&gt;Eve&lt;/td&gt;
-                            &lt;td&gt;Jackson&lt;/td&gt;
-                            &lt;td&gt;94&lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;/table&gt;    
-                        </code>
-                    </pre>
-                </figure>
-                <p>Displayed on the  browser as:</p>
-                <table>
+    <pre>
+    <code>
+    &lt;caption&gt;Student Data&lt;/caption&gt;
+    &lt;table &gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+        &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+        &lt;td&gt;94&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;    
+    </code>
+    </pre>
+                </figure> <br>
+                <p>Displayed on the  browser as:</p> <br>
+                <table class="table-browser">
                 <caption>Student Data</caption>
                 <tr>
                     <th>Firstname</th>
@@ -320,35 +326,35 @@
                     <td>94</td>
                   </tr>
                 </table>
-            </article>
+            </article> <br> <br>
         </section>
         <section class="main-section" id="semantic_elements">
-            <h2>Semantic Elements</h2>
-            <p>Semantic HTML tags gives structure and meaning to a web page. <br> It helps in making the web page accessible to everyone </p>
+            <h2>Semantic Elements</h2> <br>
+            <p>Semantic HTML tags gives structure and meaning to a web page. <br> It helps in making the web page accessible to everyone </p> <br>
             <article>
-                <h3>Semantic HTML</h3>
-                <p>When a screen reader, or any sort of assistive device scans a web page, it gets information about the Document Object Model (DOM), or the HTML structure of the page.</p>
-                <p>HTML5 introduced several new semantic elements representing logical sections or components of a web page. <br> None of the new elements actually “do” anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies to use this information to enable alternate ways of viewing and navigating a web page.</p>
-                <p>When we write semantically correct HTML, we’re letting the browser know what type of content it’s dealing with and how that content relates to other content. By doing this, assistive technology is more easily able to do its job because it has a structure that it can work with</p>
+                <h3>Semantic HTML</h3> <br>
+                <p>When a screen reader, or any sort of assistive device scans a web page, it gets information about the Document Object Model (DOM), or the HTML structure of the page.</p> <br>
+                <p>HTML5 introduced several new semantic elements representing logical sections or components of a web page. <br> None of the new elements actually “do” anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies to use this information to enable alternate ways of viewing and navigating a web page.</p> <br>
+                <p>When we write semantically correct HTML, we’re letting the browser know what type of content it’s dealing with and how that content relates to other content. By doing this, assistive technology is more easily able to do its job because it has a structure that it can work with</p> <br>
             </article>
             <article>
-                <h3>Types of Semantic Elements</h3>
-                <ul>
-                    <li>Heading &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;&lt;h6&gt;</li>
+                <h3>Types of Semantic Elements</h3> <br>
+                <ul class="lists">
+                    <li>Headings &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;&lt;h6&gt;</li>
                     <li>&lt;header&gt;</li>
                     <li>&lt;main&gt;</li>
                     <li>&lt;nav&gt;</li>
                     <li>&lt;footer&gt;</li>
                     <li>&lt;article&gt;</li>
                     <li>&lt;section&gt;</li>
-                </ul>
-                <p>Using these semantic tags in your documents helps adds structure to your web page and it makes your easy to navigate through</p>
-                <p>Making the web accessible does not also stops at using semantic elements on your page. It also involve making sure that the correct Hypertext Markup Language elements are used for the correct purpose at all times</p>
+                </ul> <br>
+                <p>Using these semantic tags in your documents helps adds structure to your web page and it makes your easy to navigate through</p> <br>
+                <p>Making the web accessible does not also stops at using semantic elements on your page. It also involve making sure that the correct Hypertext Markup Language elements are used for the correct purpose at all times</p> <br>
             </article>
             <article>
-                <h3>Best Practices for Accessibilty</h3>
+                <h3>Best Practices for Accessibilty</h3> <br>
                 <ol>
-                    <li>Use Container Elements for Layout Only: Elements like &lt;div&gt; and &lt;span&gt; are for layout only. They’re semantically meaningless, they don’t have keyboard or touch support in any browser, and they don’t communicate anything to the accessibility API.</li>
+                    <li>Use Container Elements for Layout Only: Elements like <span>&lt;div&gt;</span> and <span>&lt;span&gt;</span> are for layout only. They are semantically meaningless, they don’t have keyboard or touch support in any browser, and they don’t communicate anything to the accessibility API.</li>
                     <li>Use Semantic HTML elements to structure every page:</li>
                     <li>Use an excellent content structure with headings,paragraph,lists etc</li>
                     <li>Use clear language that is not complex and does not contain jargon. Avoid using characters that do not get read aloud clearly by the screen reader.</li>
@@ -357,36 +363,36 @@
             </article>
             <figure>
                 <figcaption>A correct and semantically marked up page should look like this</figcaption>
-                <pre>
-                    <code>
-                        &lt;header&gt;
-                        &lt;h1​&gt;​Header&lt;/​h1&gt;&lt;/​header&gt;
-                        ​&lt;​nav​&gt;
-                        &lt;!-- main navigation in here --&gt;
-                        &lt;/nav&gt;
-                            &lt;!-- Here is our page's main content --&gt;&lt;main&gt;
-                          
-                                &lt;!-- It contains an article --&gt;
-                                &lt;article&gt;
-                                &lt;h2&gt;Article heading&lt;/h2&gt;
-                          
-                                &lt;!-- article content in here --&gt;
-                                &lt;/article&gt;
-                          
-                                &lt;aside&gt;
-                                &lt;h2&gt;Related&lt;/h2&gt;
-                          
-                                &lt;!-- aside content in here -->
-                                &lt;/aside&gt;/main&gt;
-                                &lt;!-- And here is our main footer that is used across all the pages of our website --&gt;
-                                &lt;footer&gt;
-                                &lt;!-- footer content in here --&gt;
-                            &lt;/footer&gt;
-                    </code>
-                </pre>
+    <pre>
+    <code>
+    &lt;header&gt;
+        &lt;h1​&gt;​ Heading &lt;/h1&gt;
+        ​&lt;​nav​&gt;
+            &lt;!-- main navigation in here --&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;!-- Here is our page's main content --&gt;
+        &lt;!-- It contains an article --&gt;
+        &lt;article&gt;               
+            &lt;h2&gt;Article heading&lt;/h2&gt;
+            &lt;!-- article content in here --&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    &lt;aside&gt;
+        &lt;h2&gt;Related&lt;/h2&gt;                     
+        &lt;!-- aside content in here -->
+    &lt;/aside&gt;
+    &lt;!-- And here is our main footer that is used across all the pages of our website --&gt;
+    &lt;footer&gt;
+    &lt;!-- footer content in here --&gt;
+    &lt;/footer&gt;
+    </code>
+    </pre>
             </figure>
         </section>
    </main>
+   <br>
    <footer>
        <p>&copy; 2020 <a href="twitter.com/nnekasandra_">Njoku Nneka Sandra</a></p>
    </footer>
