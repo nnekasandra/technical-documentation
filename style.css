@@ -30,10 +30,16 @@ nav ul li{
     border-bottom: 1px ridge #444;
     list-style: none;
     margin-left: 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
 }
 nav ul li a{
     text-decoration: none;
     color: #163172;
+}
+a:hover{
+    background-color: #163172;
+    color: #fff;
 }
 pre{
     background-color:#444;
@@ -92,6 +98,7 @@ span{
  }
  footer p a:hover{
      font-size: 1.5rem;
+     border-bottom: 4px solid #fff;
  }
  .dl1,.dl2{
      margin-bottom: 20px;
@@ -105,14 +112,14 @@ span{
  ol li{
      margin-bottom: 20px;
  }
- .table-browser,.table,.input-example,.radio-example{
+ .table-browser,.table,.radio-example{
     padding: 10px;
     margin: 10px;
     border: 2px solid #444;
     margin: 0 auto;
     width: 50%;
  }
- .form-table{
+ .form-table,.input-example{
      padding: 10px;
      margin: 5px;
      border: 2px solid #444;
@@ -120,7 +127,7 @@ span{
  .lists{
      font-weight: bold;
  }
- @media only screen and (min-width:760px){
+ @media only screen and (min-width:789px){
     nav{
         position: fixed;
         left: 0;
@@ -140,7 +147,7 @@ span{
         font-size: 27px;
         display: block;
     }
-    main{
+    main,footer{
         margin-left: 400px;
         padding: 0 10px;
     }
